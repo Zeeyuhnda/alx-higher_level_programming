@@ -1,8 +1,10 @@
 #include <Python.h>
+#include <stdio.h>
 
 /**
  * print_python_list_info - Printsbasic infor about Python lists
  * @p: PyObject list
+ * Return: Nothing
  */
 void print_python_list_info(PyObject *p)
 {
