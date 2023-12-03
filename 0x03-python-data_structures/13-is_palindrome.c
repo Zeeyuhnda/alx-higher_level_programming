@@ -63,7 +63,7 @@ int is_palindrome(listint_t **head)
 		tmp = tmp->next;
 		rev = rev->next;
 	}
-	reverse_listnint(&mid);
+	reverse_listint(&mid);
 
 	return (1);
 }
