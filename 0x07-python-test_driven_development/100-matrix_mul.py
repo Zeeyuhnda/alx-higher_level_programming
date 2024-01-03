@@ -21,7 +21,7 @@ def matrix_mul(m_a, m_b):
 
     if m_a == [] or m_a == [[]]:
         raise ValueError("m_a can't be empty")
-    if m_b == [] or m_b [[]]:
+    if m_b == [] or m_b == [[]]:
         raise ValueError("m_b can't be empty")
 
     for row in m_a:
@@ -41,15 +41,15 @@ def matrix_mul(m_a, m_b):
     row_len = []
     for row in m_b:
         row_len.append(len(row))
-        if not all(elem == row_len[0] for elem in row_len:
-                raise TypeError("each row of m_b must be of the same size")
+    if not all(elem == row_len[0] for elem in row_len):
+            raise TypeError("each row of m_b must be of the same size")
 
     a_col = 0
     for col in m_a[0]:
         a_col += 1
     b_row = 0
     for row in m_b:
-        b_col += 1
+        b_row += 1
 
     if a_col != b_row:
         raise ValueError("m_a and m_b can't be multiplied")
