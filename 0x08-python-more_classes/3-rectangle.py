@@ -1,4 +1,4 @@
-`#!/usr/bin/python3
+#!/usr/bin/python3
 """Module 3-rectangle
 Defines a Rectangle class.
 """
@@ -39,7 +39,7 @@ class Rectangle:
         """Sets the width of a Rectangle instance
 
         Args:
-             value: value of the width, must be a positive integer
+            value: value of the width, must be a positive integer
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -48,7 +48,7 @@ class Rectangle:
         self.__width = value
 
     @property
-    def height(self)
+    def height(self):
         """Retrieves the height of a Rectangle instance."""
         return self.__height
 
@@ -74,10 +74,11 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-         """Calculates the perimeter of a Rectangle instance
+        """Calculates the perimeter of a Rectangle instance
 
-         Returns:
+        Returns:
             Perimeter of the rectangle, given by 2 * (height + width)
         """
         if self.__height == 0 or self.__width == 0:
             return 0
+        return 2 * (self.__width + self.__height)
