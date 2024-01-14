@@ -68,7 +68,7 @@ class Rectangle(Base):
         rectangle = ""
         print("\n" * self.y, end="")
         for i in range(self.height):
-            rectangle ++= (" " * self.x) + ("#" * self.width) + "\n"
+            rectangle += (" " * self.x) + ("#" * self.width) + "\n"
         print(rectangle, end="")
 
     def update(self, *args, **kwargs):
